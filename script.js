@@ -48,7 +48,7 @@ Complete the exercise in the space below:
 */
 
 const isCharAVowel = (vowel) => {
-    if (vowel = 'a, e, i, o, u')
+    if (vowel = 'a'||'e'||'i'||'o'||'u');
         return 'Vowel'
 }
 
@@ -64,10 +64,10 @@ Example: generateEmail('johnsmith', 'example.com') should return 'johnsmith@exam
 Complete the exercise in the space below:
 */
 
-const generateEmail = (name, domain) => {
-    if (name = 'johnsmith')
-        if (domain = 'example.com')
-            return 'johnsmith@example.com'
+function generateEmail(name, domain) {
+name = "johnsmith" 
+domain = "example.com"
+return name + domain;
 }
 console.log('Exercise 4 Result:', generateEmail("johnsmith", "example.com"));
 
@@ -81,12 +81,20 @@ Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
 Complete the exercise in the space below:
 */
 
-const greetUser = (name, time) =>{
-    if (name = 'Sam')
-        if (time = 'morning')
-            return 'Good morning, Sam!'
-}
+function greetUser(name, time) {
+name = 'Sam'
+let hour = 5;
+if(hour>=6 && hour<12) {
+    return 'Good morning!'
 
+}
+else if(hour>+12 && hour<18) {
+    return 'Good afternoon!'
+}
+else {
+    return 'Good evening!'
+}
+}
 console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
 
 /*
